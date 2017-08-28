@@ -27,15 +27,14 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   //   console.log(JSON.stringify(result.ops, undefined, 2))
   // });
 
-  db.collection('Weee').insertOne({
-    text: 'weeee to do',
+  db.collection('Foo').insertOne({
+    text: 'Foo to you',
     completed: false,
     monkeyButt: true
   }, (err, result) => {
     if (err) {
       return console.log('Unable to insert todo', err)
     }
-
     console.log(JSON.stringify(result.ops, undefined, 2))
   });
 

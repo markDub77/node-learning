@@ -41,9 +41,6 @@ console.log('Command: ', command);
 // console.log('Yargs', argv);
 
 
-
-
-
 // dispatcher
 if (command === 'add') {
   var note = notes.addNote(argv.title, argv.body);
